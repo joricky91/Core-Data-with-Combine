@@ -5,7 +5,6 @@
 //  Created by Jonathan Ricky Sandjaja on 11/02/23.
 //
 
-import Foundation
 import UIKit
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {

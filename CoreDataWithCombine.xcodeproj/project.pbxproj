@@ -14,6 +14,7 @@
 		512AC7E729975D3F000F2445 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 512AC7E529975D3F000F2445 /* LaunchScreen.storyboard */; };
 		512AC7F329975E29000F2445 /* TodoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 512AC7F129975E29000F2445 /* TodoModel.xcdatamodeld */; };
 		512AC7F729975F1F000F2445 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512AC7F629975F1F000F2445 /* ViewControllerExtension.swift */; };
+		512AC7F92997609A000F2445 /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512AC7F82997609A000F2445 /* TodoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		512AC7E829975D3F000F2445 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		512AC7F229975E29000F2445 /* TodoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TodoModel.xcdatamodel; sourceTree = "<group>"; };
 		512AC7F629975F1F000F2445 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		512AC7F82997609A000F2445 /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		512AC7EF29975DFC000F2445 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				512AC7F82997609A000F2445 /* TodoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				512AC7F92997609A000F2445 /* TodoViewModel.swift in Sources */,
 				512AC7DF29975D3D000F2445 /* ViewController.swift in Sources */,
 				512AC7F329975E29000F2445 /* TodoModel.xcdatamodeld in Sources */,
 				512AC7DB29975D3D000F2445 /* AppDelegate.swift in Sources */,
