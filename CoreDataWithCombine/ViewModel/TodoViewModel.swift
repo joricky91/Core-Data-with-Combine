@@ -22,4 +22,11 @@ class TodoViewModel: ObservableObject {
             print("Error fetching data. Error: \(error)")
         }
     }
+    
+    func addNewData(task: String) {
+        let newTodo = Todo(context: context)
+        newTodo.id = UUID()
+        newTodo.task = task
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+    }
 }
