@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var viewModel: TodoViewModel = TodoViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,6 +17,7 @@ class ViewController: UIViewController {
         view.backgroundColor = .systemBackground
         view.addSubview(tableView)
         setupConstraints()
+        viewModel.fetchTodoItem()
     }
 
     lazy var tableView: UITableView = {
