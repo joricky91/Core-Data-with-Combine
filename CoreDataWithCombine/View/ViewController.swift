@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import Combine
 
 class ViewController: UIViewController {
     
     var viewModel: TodoViewModel = TodoViewModel()
+    private var cancellables: Set<AnyCancellable> = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +30,15 @@ class ViewController: UIViewController {
         table.dataSource = self
         return table
     }()
+    
+    func setupBindings() {
+        viewModel.$todos
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] items in
+                self?.tableView.reloadData()
+            }
+            .store(in: &cancellables)
+    }
     
     func setupConstraints() {
         let safeArea = view.safeAreaLayoutGuide
