@@ -19,5 +19,17 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let deleteButton = UIContextualAction(style: .destructive, title: "Delete") { _, _, _ in
+            self.viewModel.deleteSelectedData(indexPath: indexPath)
+        }
+        
+        let swipe = UISwipeActionsConfiguration(actions: [deleteButton])
+        return swipe
+    }
     
 }

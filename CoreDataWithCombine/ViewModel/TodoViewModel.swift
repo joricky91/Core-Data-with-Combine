@@ -29,4 +29,17 @@ class TodoViewModel: ObservableObject {
         newTodo.task = task
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
     }
+    
+    func deleteSelectedData(indexPath: IndexPath) {
+        let selectedItems = todos[indexPath.row]
+        context.delete(selectedItems)
+        
+        do {
+            try context.save()
+        } catch {
+            print(error)
+        }
+        
+        fetchTodoItem()
+    }
 }
