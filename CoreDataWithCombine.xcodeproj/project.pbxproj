@@ -13,6 +13,7 @@
 		512AC7E429975D3F000F2445 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 512AC7E329975D3F000F2445 /* Assets.xcassets */; };
 		512AC7E729975D3F000F2445 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 512AC7E529975D3F000F2445 /* LaunchScreen.storyboard */; };
 		512AC7F329975E29000F2445 /* TodoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 512AC7F129975E29000F2445 /* TodoModel.xcdatamodeld */; };
+		512AC7F729975F1F000F2445 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512AC7F629975F1F000F2445 /* ViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		512AC7E629975D3F000F2445 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		512AC7E829975D3F000F2445 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		512AC7F229975E29000F2445 /* TodoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TodoModel.xcdatamodel; sourceTree = "<group>"; };
+		512AC7F629975F1F000F2445 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				512AC7DE29975D3D000F2445 /* ViewController.swift */,
+				512AC7F629975F1F000F2445 /* ViewControllerExtension.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				512AC7DF29975D3D000F2445 /* ViewController.swift in Sources */,
 				512AC7F329975E29000F2445 /* TodoModel.xcdatamodeld in Sources */,
 				512AC7DB29975D3D000F2445 /* AppDelegate.swift in Sources */,
+				512AC7F729975F1F000F2445 /* ViewControllerExtension.swift in Sources */,
 				512AC7DD29975D3D000F2445 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
